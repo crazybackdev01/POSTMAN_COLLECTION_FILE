@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "4f0d78a1-86b4-4cc1-93ad-f9d3bce81e62",
+		"name": "Image-Upload-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32853761"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "5MbUP687e/view-3d-laptop-device-with-screen-keyboard.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://image-upload-task.onrender.com/api/image/upload",
+					"protocol": "https",
+					"host": [
+						"image-upload-task",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image-upload-task.onrender.com/api/image/67d97c203c4d78afcc635b44",
+					"protocol": "https",
+					"host": [
+						"image-upload-task",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"67d97c203c4d78afcc635b44"
+					]
+				},
+				"description": "Performs GET request on \"BASE_URL/api/image/:id\""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://image-upload-task.onrender.com/api/image/67d97dec49e754011c857bb1",
+					"protocol": "https",
+					"host": [
+						"image-upload-task",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"67d97dec49e754011c857bb1"
+					]
+				},
+				"description": "Performs DELETE request on \"BASE_URL/api/image/:id\""
+			},
+			"response": []
+		}
+	]
+}
