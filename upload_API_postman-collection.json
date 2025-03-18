@@ -36,7 +36,10 @@
 					]
 				}
 			},
-			"response": []
+			"response": [{
+    "message": "Image uploaded successfully",
+    "URL": "https://res.cloudinary.com/dchtfdauw/image/upload/v1742310187/z9r6it6aqo5fkihcez7a.jpg"
+}]
 		},
 		{
 			"name": "Get Image",
@@ -67,7 +70,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://image-upload-task.onrender.com/api/image/67d97dec49e754011c857bb1",
+					"raw": "https://image-upload-task.onrender.com/api/image/67d97c203c4d78afcc635b44",
 					"protocol": "https",
 					"host": [
 						"image-upload-task",
@@ -82,7 +85,11 @@
 				},
 				"description": "Performs DELETE request on \"BASE_URL/api/image/:id\""
 			},
-			"response": []
+			"response": [
+				{
+					"message": "Image Deleted Successfully"
+				}	
+			]
 		}
 	]
 }
